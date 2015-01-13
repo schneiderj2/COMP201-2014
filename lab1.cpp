@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
 		cout << "Input file failed to open" << endl;
 		return 1;
 	}
-	outf.open("lab1output.txt");
+	outf.open("output.txt");
 	if(outf.fail()) {
 		cout << "The output file failed to open" << endl;
 		return 1;
