@@ -14,9 +14,10 @@ extensions::extract() {
 extensions::install() {
     local dest="$(which gcc)"
     dest="${dest%/bin/gcc}"
-    find SDL2* | grep 686 | grep mingw32$ | while read library; do
+    find SDL2* | grep x86_64 | grep mingw32$ | while read library; do
         pushd $library
-        cp -R bin/ include/ lib/ $dest
+        mv lib lib64
+        cp -R bin/ include/ lib64/ $dest
         popd
     done
 }
