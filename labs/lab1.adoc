@@ -78,6 +78,8 @@ instead of displaying it to the screen.
 
 == How to submit
 
+You don't need to submit Parts 1 and 2 separately. Part 2 by itself should suffice.
+
 Place your code in a file called `lab1.cpp`. Save this file in your `COMP201-2014`
 folder. Then do this:
 
