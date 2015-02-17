@@ -123,7 +123,15 @@ Model::~Model() {
 // That is, is the row within the height, and is the column within the width?
 // Return whether it is or isn't.
 bool Model::valid(int row, int column) {
-    return true;
+    if(row >= 0 && row < height) {
+		if(column >= 0 && column < width) {
+			if(visible[row][column] == grid[row][column]) {
+				return false;
+			}
+			return true;
+		}
+	}
+	return false;
 }
 bool Model::matched(int row, int column) {
     return true;
